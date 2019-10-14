@@ -1,15 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
-import classes from "./App.module.scss";
+import React from 'react';
+import { logo } from './assets/images';
+import classes from './App.module.scss';
+import HelloWorld from './components';
 
 function App() {
-  console.log(classes);
   return (
     <div className={classes.app}>
       <header className={classes.appHeader}>
         <img src={logo} className={classes.appLogo} alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit
+          <code>src/App.js</code>
+          and save to reload.
         </p>
         <a
           className={classes.appLink}
@@ -20,6 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <HelloWorld />
     </div>
   );
 }
